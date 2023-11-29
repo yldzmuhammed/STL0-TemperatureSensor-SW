@@ -1,0 +1,209 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sf asdf, asdf, LIC=NHY74-F3D5J-48XFA-11UVQ-KKDDD-Y0BKW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  x:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+P:\YILDIZIoT\ColdChain Sensor\STL0-UTMP SW\MDK-ARM\STL0-UTMP.uvprojx
+Project File Date:  07/29/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'x:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STL0-UTMP'
+compiling main.c...
+../Src/main.c(193): warning:  #223-D: function "LL_SetSystemCoreClock" declared implicitly
+    LL_SetSystemCoreClock(16000000);
+../Src/main.c(274): error:  #20: identifier "LL_GPIO_InitTypeDef" is undefined
+    LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+../Src/main.c(282): warning:  #223-D: function "LL_GPIO_ResetOutputPin" declared implicitly
+    LL_GPIO_ResetOutputPin(FLASH_WP_GPIO_Port, FLASH_WP_Pin);
+../Src/main.c(282): error:  #20: identifier "FLASH_WP_GPIO_Port" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_WP_GPIO_Port, FLASH_WP_Pin);
+../Src/main.c(282): error:  #20: identifier "FLASH_WP_Pin" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_WP_GPIO_Port, FLASH_WP_Pin);
+../Src/main.c(285): error:  #20: identifier "FLASH_HOLD_GPIO_Port" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_HOLD_GPIO_Port, FLASH_HOLD_Pin);
+../Src/main.c(285): error:  #20: identifier "FLASH_HOLD_Pin" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_HOLD_GPIO_Port, FLASH_HOLD_Pin);
+../Src/main.c(288): error:  #20: identifier "FLASH_PWREN_GPIO_Port" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_PWREN_GPIO_Port, FLASH_PWREN_Pin);
+../Src/main.c(288): error:  #20: identifier "FLASH_PWREN_Pin" is undefined
+    LL_GPIO_ResetOutputPin(FLASH_PWREN_GPIO_Port, FLASH_PWREN_Pin);
+../Src/main.c(291): error:  #20: identifier "LL_GPIO_PIN_4" is undefined
+    LL_GPIO_ResetOutputPin(SENSOR_POWER_GPIO_Port, SENSOR_POWER_Pin);
+../Src/main.c(294): error:  #20: identifier "LL_GPIO_PIN_1" is undefined
+    GPIO_InitStruct.Pin = LL_GPIO_PIN_1;
+../Src/main.c(295): error:  #20: identifier "LL_GPIO_MODE_ANALOG" is undefined
+    GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+../Src/main.c(296): error:  #20: identifier "LL_GPIO_PULL_NO" is undefined
+    GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+../Src/main.c(297): warning:  #223-D: function "LL_GPIO_Init" declared implicitly
+    LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+../Src/main.c(300): error:  #20: identifier "LL_GPIO_PIN_2" is undefined
+    GPIO_InitStruct.Pin = LL_GPIO_PIN_2;
+../Src/main.c(307): error:  #20: identifier "LL_GPIO_MODE_OUTPUT" is undefined
+    GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+../Src/main.c(308): error:  #20: identifier "LL_GPIO_SPEED_FREQ_LOW" is undefined
+    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+../Src/main.c(309): error:  #20: identifier "LL_GPIO_OUTPUT_PUSHPULL" is undefined
+    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+../Src/main.c(331): error:  #20: identifier "LL_GPIO_MODE_INPUT" is undefined
+    GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+../Src/main.c(336): error:  #20: identifier "LL_GPIO_PIN_8" is undefined
+    GPIO_InitStruct.Pin = PeriodSel_5Min_Pin;
+../Src/main.c(342): error:  #20: identifier "LL_GPIO_PIN_9" is undefined
+    GPIO_InitStruct.Pin = PeriodSel_2Min_Pin;
+../Src/main.c(348): error:  #20: identifier "LL_GPIO_PIN_10" is undefined
+    GPIO_InitStruct.Pin = PeriodSel_1Min_Pin;
+../Src/main.c(354): error:  #20: identifier "LL_GPIO_PIN_15" is undefined
+    GPIO_InitStruct.Pin = LL_GPIO_PIN_15;
+../Src/main.c(360): error:  #20: identifier "LL_GPIO_PIN_3" is undefined
+    GPIO_InitStruct.Pin = LL_GPIO_PIN_3;
+../Src/main.c(383): warning:  #223-D: function "LL_GPIO_SetPinPull" declared implicitly
+    LL_GPIO_SetPinPull(SENSOR_IRQ_GPIO_Port, SENSOR_IRQ_Pin, LL_GPIO_PULL_NO);
+../Src/main.c(383): error:  #20: identifier "LL_GPIO_PIN_5" is undefined
+    LL_GPIO_SetPinPull(SENSOR_IRQ_GPIO_Port, SENSOR_IRQ_Pin, LL_GPIO_PULL_NO);
+../Src/main.c(386): warning:  #223-D: function "LL_GPIO_SetPinMode" declared implicitly
+    LL_GPIO_SetPinMode(SENSOR_IRQ_GPIO_Port, SENSOR_IRQ_Pin, LL_GPIO_MODE_INPUT);
+../Src/main.c(67): error:  #114: function "MX_SPI1_Init"  was referenced but not defined
+  static void MX_SPI1_Init(void);
+../Src/main.c: 5 warnings, 23 errors
+compiling app_x-cube-mems1.c...
+compiling usbd_desc.c...
+compiling usb_device.c...
+compiling user_diskio.c...
+compiling fatfs.c...
+compiling usbd_conf.c...
+assembling startup_stm32l052xx.s...
+compiling stts22h.c...
+compiling stts22h_reg.c...
+compiling custom_bus.c...
+compiling system_stm32l0xx.c...
+compiling stm32l0xx_hal_pcd.c...
+compiling stm32l0xx_ll_gpio.c...
+compiling w25x20cl.c...
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(240): warning:  #223-D: function "W25x20CL_ReadStatusRegister" declared implicitly
+      W25x20CL_ReadStatusRegister(1);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(255): warning:  #177-D: variable "Temp"  was declared but never referenced
+      uint32_t Temp, Temp0, Temp1, Temp2;
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(494): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+      HAL_SPI_Transmit(&_W25x20CL_SPI, pBuffer, NumByteToWrite_up_to_PageSize, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(494): error:  #20: identifier "_W25x20CL_SPI" is undefined
+      HAL_SPI_Transmit(&_W25x20CL_SPI, pBuffer, NumByteToWrite_up_to_PageSize, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(666): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+      HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, NumByteToRead, 2000);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(666): error:  #20: identifier "_W25x20CL_SPI" is undefined
+      HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, NumByteToRead, 2000);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(721): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+      HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, NumByteToRead_up_to_PageSize, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(721): error:  #20: identifier "_W25x20CL_SPI" is undefined
+      HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, NumByteToRead_up_to_PageSize, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(871): error:  #159: declaration is incompatible with previous "W25x20CL_ReadStatusRegister"  (declared at line 240)
+  uint8_t W25x20CL_ReadStatusRegister(uint8_t SelectStatusRegister)
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(875): error:  #20: identifier "SelectStatusRegister_1_2_3" is undefined
+      if(SelectStatusRegister_1_2_3 == 1)
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(931): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(931): error:  #20: identifier "_W25x20CL_SPI" is undefined
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(957): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(957): error:  #20: identifier "_W25x20CL_SPI" is undefined
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1014): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1014): error:  #20: identifier "_W25x20CL_SPI" is undefined
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1040): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1040): error:  #20: identifier "_W25x20CL_SPI" is undefined
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1097): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1097): error:  #20: identifier "_W25x20CL_SPI" is undefined
+          HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, sizeof(pBuffer), 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1123): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(1123): error:  #20: identifier "_W25x20CL_SPI" is undefined
+              HAL_SPI_Receive(&_W25x20CL_SPI, pBuffer, 1, 100);
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c(74): warning:  #177-D: function "W25x20CL_WriteDisable"  was declared but never referenced
+  static void W25x20CL_WriteDisable(void)
+..\Drivers\BSP\Components\w25x20cl\w25x20cl.c: 12 warnings, 11 errors
+compiling stm32l0xx_hal_pcd_ex.c...
+compiling stm32l0xx_ll_usb.c...
+compiling stm32l0xx_hal_i2c_ex.c...
+compiling stm32l0xx_hal_msp.c...
+compiling stm32l0xx_it.c...
+compiling stm32l0xx_hal_i2c.c...
+compiling stm32l0xx_ll_rtc.c...
+compiling stm32l0xx_hal_tim_ex.c...
+compiling stm32l0xx_hal_tim.c...
+compiling stm32l0xx_ll_spi.c...
+compiling stm32l0xx_ll_exti.c...
+compiling stm32l0xx_ll_rcc.c...
+compiling stm32l0xx_ll_dma.c...
+compiling stm32l0xx_ll_utils.c...
+compiling stm32l0xx_hal.c...
+compiling stm32l0xx_hal_rcc.c...
+compiling stm32l0xx_hal_flash_ramfunc.c...
+compiling stm32l0xx_hal_flash_ex.c...
+compiling stm32l0xx_hal_flash.c...
+compiling stm32l0xx_hal_gpio.c...
+compiling stm32l0xx_hal_rcc_ex.c...
+compiling stm32l0xx_hal_dma.c...
+compiling stm32l0xx_hal_pwr.c...
+compiling stm32l0xx_hal_cortex.c...
+compiling stm32l0xx_hal_pwr_ex.c...
+compiling diskio.c...
+compiling ff_gen_drv.c...
+compiling ff.c...
+compiling syscall.c...
+compiling usbd_ioreq.c...
+compiling usbd_core.c...
+compiling usbd_ctlreq.c...
+compiling usbd_hid.c...
+"STL0-UTMP\STL0-UTMP.axf" - 34 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.1.0.pack
+                Keil.STM32L0xx_DFP.2.1.0
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STL0-UTMP
+  x:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  x:\Keil_v5\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:33
+</pre>
+</body>
+</html>
